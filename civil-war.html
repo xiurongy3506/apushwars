@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" contact="width=device-width, initial-scale=1">
+    <title>title</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link href="custom.css" rel="stylesheet">
+
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body {
+        font-family: "Lato", sans-serif;
+        transition: background-color .5s;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    #main {
+        transition: margin-left .5s;
+        padding: 16px;
+    }
+
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 15px;
+        }
+        .sidenav a {
+            font-size: 18px;
+        }
+    }
+    
+     #Involved {
+       margin-top: 30px;
+      margin-bottom: 30px;
+      margin-right:100px;
+      margin-left:100px; 
+      padding-right: 60px;
+      padding-left: 60px;
+    }
+    #Start {
+       margin-top: 30px;
+      margin-bottom: 30px;
+      margin-right:100px;
+      margin-left:100px; 
+      padding-right: 60px;
+      padding-left: 60px;
+    }
+    #Major {
+       margin-top: 30px;
+      margin-bottom: 30px;
+      margin-right:100px;
+      margin-left:100px; 
+      padding-right: 60px;
+      padding-left: 60px;
+    }
+    #Outcome {
+       margin-top: 30px;
+      margin-bottom: 30px;
+      margin-right:100px;
+      margin-left:100px; 
+      padding-right: 60px;
+      padding-left: 60px;
+    }
+</style>
+
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#Involved">Involved Nations</a>
+        <a href="#Start">Start of the War</a>
+        <a href="#Major">Major Battle(s)</a>
+        <a href="#Outcome">Outcome/Effect</a>
+    </div>
+
+    <div id="main">
+
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Civil War</span>
+    </div>
+
+    <div class="jumbotron" id="Involved">
+        <h1>Involved Nations</h1>
+        <p>There's lots of stuff to discover here.</p>
+
+        <p>Let me show you around.</p>
+
+        </p>
+    </div>
+    <div class="jumbotron" id="Start">
+        <h1>Start of War</h1>
+        <p>There's lots of stuff to discover here.</p>
+
+        <p>Let me show you around.</p>
+
+        </p>
+    </div>
+    <div class="jumbotron" id="Major">
+        <h1>Major Battle(s)</h1>
+        <p>There's lots of stuff to discover here.</p>
+
+        <p>Let me show you around.</p>
+
+        </p>
+    </div>
+    <div class="jumbotron" id="Outcome">
+        <h1>Outcome/Effect</h1>
+        <p>There's lots of stuff to discover here.</p>
+
+        <p>Let me show you around.</p>
+
+        </p>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+
+</body>
+
+</html>
