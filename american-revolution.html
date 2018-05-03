@@ -71,16 +71,21 @@
             font-size: 18px;
         }
     }
+    
+    #mySidenav {
+        position: fixed;
+        bottom: 0;
+    }
 </style>
 
 
 <body>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Involved Nations</a>
-        <a href="#">Start of the War</a>
-        <a href="#">Major Battle(s)</a>
-        <a href="#">Outcome/Effect</a>
+        <a href="#involved-nations">Involved Nations</a>
+        <a href="#start">Start of the War</a>
+        <a href="#major-battles">Major Battle(s)</a>
+        <a href="#outcome">Outcome/Effect</a>
     </div>
 
     <div id="main">
@@ -101,6 +106,53 @@
             document.body.style.backgroundColor = "white";
         }
     </script>
+
+<header id="involved-nations">
+    <div class="center-text">
+        <h1>Involved Nations</h1>
+    </div>
+    
+    <div class="container">
+        <p>American Colonies Vs. British Empire</p>
+    </div>
+</header>
+
+<header id="start">
+    <div class="center-text">
+        <h1>Start of the War</h1>
+    </div>
+
+    <div class="container">
+        <p>TEXT TEXT TEXT</p>
+    </div>
+</header>
+
+<header id="major battles">
+    <div class="center-text">
+        <h1>Major Battles</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-6">
+            <p>TEXT TEXT TEXT</p>
+        </div>
+
+        <div class="col-xs-6">
+            <p>TEXT TEXT TEXT</p>
+        </div>
+    </div>
+</header>
+
+<header id="outcome">
+    <div class="center-text">
+        <h1>Outcome</h1>
+    </div>
+    
+      <div class="container">
+        <p>TEXT TEXT TEXT</p>
+    </div>
+</header>
+
 
 </body>
 
