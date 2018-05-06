@@ -115,6 +115,45 @@
     .jumbotron {
         background-color: lightblue;
     }
+    .container {
+        position: relative;
+        width: 50%;
+    }
+
+    .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .container:hover .image {
+        opacity: 0.3;
+    }
+
+    .container:hover .middle {
+        opacity: 1;
+    }
+
+    .text {
+        background-color: #4CAF50;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+    }
 </style>
 
 
@@ -132,13 +171,24 @@
 
         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Spanish-American War</span>
     </div>
-
+    
+    <!--img-->
+    <div class="container">
+        <img src="imgs/XJimg/Spanish-American.jpg" alt="Responsive image" class="img-thumbnail" style="width:100%">
+        <div class="middle">
+            <div class="text">XDX</div>
+        </div>
+    </div>
+    
+    <!--Involved-->
     <div class="jumbotron" id="Involved">
         <h1>Involved Nations</h1>
         <p><b>United States V.S Spain</b></p>
         <p>(Philippines, Cuba, Katipunan, Guam, Puerto Rico.)</p>
 
     </div>
+    
+    <!--Start-->
     <div class="jumbotron" id="Start">
         <h1>Start of War</h1>
         <p><b>Start Apr 21, 1898 – End Aug 13, 1898</b></p>
@@ -147,6 +197,8 @@
 
 
     </div>
+    
+    <!--Major-->
     <div class="jumbotron" id="Major">
         <h1>Major Battle(s)</h1>
         <p><b>The Battle of Las Guasimas:</b> of June 24, 1898 was a Spanish rearguard action by Major General Antero Rubín against advancing columns led by Major General "Fighting Joe" Wheeler and the first land engagement of the Spanish–American War.
@@ -155,6 +207,8 @@
 
 
     </div>
+    
+    <!--Outcome-->
     <div class="jumbotron" id="Outcome">
         <h1>Outcome/Effect</h1>
         <p>The war ended with the signing of the Treaty of Paris on December 10, 1898. Spain renounced all claim to Cuba, ceded Guam and Puerto Rico to the United States, and transferred sovereignty over the Philippines to the United States for $20 million.

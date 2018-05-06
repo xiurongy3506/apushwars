@@ -115,6 +115,45 @@
     .jumbotron {
         background-color: lightblue;
     }
+    .container {
+        position: relative;
+        width: 50%;
+    }
+
+    .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .container:hover .image {
+        opacity: 0.3;
+    }
+
+    .container:hover .middle {
+        opacity: 1;
+    }
+
+    .text {
+        background-color: #4CAF50;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+    }
 </style>
 
 
@@ -132,13 +171,22 @@
 
         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Civil War</span>
     </div>
-
+    
+    <!--img-->
+    <div class="container">
+        <img src="imgs/XJimg/civil-war.jpg" alt="Responsive image" class="img-thumbnail" style="width:100%">
+        <div class="middle">
+            <div class="text">XDX</div>
+        </div>
+    </div>
+    
+    <!--Involved-->
     <div class="jumbotron" id="Involved">
         <h1>Involved Nations</h1>
         <p>Fought between the United States of America and the Confederate States of America, a collection of eleven southern states that left the Union in 1860 and 1861 and formed their own country in order to protect the institution of slavery.
         </p>
 
-
+    <!--Start-->
     </div>
     <div class="jumbotron" id="Start">
         <h1>Start of War</h1>
@@ -147,14 +195,14 @@
             power of the national government to prohibit slavery in the territories that had not joined the union.
         </p>
 
-
+    <!--Major-->
     </div>
     <div class="jumbotron" id="Major">
         <h1>Major Battle(s)</h1>
         <p><b>First battle (Battle of Fort Sumter):</b> Fort Sumter is most famous for being the site of the first shots of the Civil War (1861-65). After a 34-hour exchange of artillery fire, Anderson and 86 soldiers surrendered the fort on April 13. Confederate troops then occupied Fort Sumter for nearly four years, resisting several bombardments by Union forces before abandoning the garrison prior to William T. Sherman’s capture of Charleston in February 1865. </p>
 
         <p><b>Last battle (Battle of Palmito Ranch):</b>Though the Battle of Appomattox Court House is identified as the last major battle of the war, Palmito Ranch was the last land action between organized forces of the Union Army and the former Confederate States Army that resulted in casualties.</p>
-
+    <!--Outcome-->
     </div>
     <div class="jumbotron" id="Outcome">
         <h1>Outcome/Effect</h1>

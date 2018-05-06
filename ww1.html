@@ -115,6 +115,46 @@
     .jumbotron {
         background-color: lightblue;
     }
+
+    .container {
+        position: relative;
+        width: 50%;
+    }
+
+    .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .container:hover .image {
+        opacity: 0.3;
+    }
+
+    .container:hover .middle {
+        opacity: 1;
+    }
+
+    .text {
+        background-color: #4CAF50;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+    }
 </style>
 
 
@@ -132,7 +172,16 @@
 
         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; World  War I</span>
     </div>
-
+    
+    <!--img-->
+    <div class="container">
+        <img src="imgs/XJimg/WW1.jpg" alt="Responsive image" class="img-thumbnail" style="width:100%">
+        <div class="middle">
+            <div class="text">XDX</div>
+        </div>
+    </div>
+    
+    <!--involved-->
     <div class="jumbotron" id="Involved">
         <h1>Involved Nations</h1>
         <p><b>The Central Powers:</b> Germany, Austria-Hungary, Bulgaria and the Ottoman Empire </p>
@@ -140,28 +189,31 @@
 
 
     </div>
+    
+    <!--Start-->
     <div class="jumbotron" id="Start">
         <h1>Start of War</h1>
         <p><b>Start July 28, 1914 - End November 11, 1918</b></p>
-        <p>Germany U-boat sunk a bunch of U.S commercial and passenger ships 
-on April 2 Woodrow Wilson appeared before Congress and called for a declaration of war against Germany. 
-</p>
-<p><b>M – A – I – N</b> (Militarism, Alliances, Imperialism, and Nationalism.)
-</p>
+        <p>Germany U-boat sunk a bunch of U.S commercial and passenger ships on April 2 Woodrow Wilson appeared before Congress and called for a declaration of war against Germany.
+        </p>
+        <p><b>M – A – I – N</b> (Militarism, Alliances, Imperialism, and Nationalism.)
+        </p>
 
-
+    <!--Major-->
     </div>
     <div class="jumbotron" id="Major">
         <h1>Major Battle(s)</h1>
-        <p><b>The Battle of Verdun:</b> fought from 21 February to 19 December 1916 around the city of Verdun-sur-Meuse in northeast France, was one of the most important battles in World War I on the Western Front. The battle was fought between the German and French armies. The casualties from Verdun and the impact the battle had on the French Army was a primary reason for the British starting the Battle of the Somme in July 1916 in an effort to take German pressure off of the French at Verdun. </p>
+        <p><b>The Battle of Verdun:</b> fought from 21 February to 19 December 1916 around the city of Verdun-sur-Meuse in northeast France, was one of the most important battles in World War I on the Western Front. The battle was fought between the German
+            and French armies. The casualties from Verdun and the impact the battle had on the French Army was a primary reason for the British starting the Battle of the Somme in July 1916 in an effort to take German pressure off of the French at Verdun.
+            </p>
 
-
+    <!--Outcome-->
     </div>
     <div class="jumbotron" id="Outcome">
         <h1>Outcome/Effect</h1>
         <p>Paris peace conference: safeguard against, Treaty of Versailles, 14 point, and League of Nation
-        <p>16 million death (The Allied Power won)</p>
-</p>
+            <p>16 million death (The Allied Power won)</p>
+        </p>
 
     </div>
 
