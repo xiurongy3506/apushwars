@@ -13,12 +13,15 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+    <!--Fonts used-->
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn+SC" rel="stylesheet">
+    <!--End font use-->
     <link href="custom.css" rel="stylesheet">
 
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+
     body {
         font-family: "Lato", sans-serif;
         transition: background-color .5s;
@@ -72,21 +75,107 @@
         }
     }
 </style>
-
+<style type="text/css">
+    .vietcontent{
+        /*color:white;*/
+        text-align: center;
+    }
+    .heading1{
+        color:white;
+        font-family: 'Vollkorn SC', serif;
+        font-size:30px
+        
+    }
+    #viet1{
+        /*position:absolute;*/
+    }
+    p{
+        font-size:16px;
+    }
+    #bg1{
+        /*silhouette:100%;*/
+        padding:65px;
+        width:100%;
+        height:100%;
+        display:table;
+        background:linear-gradient(
+            rgba(0,0,0,0.75),
+            rgba(0,0,0,0.15)
+        ),
+            url("imgs/DWimgs/ww21.jpg") no-repeat center fixed
+            
+    }
+    #bg2{
+        /*Fix the image size in the background.*/
+        /*silhouette:100%;*/
+        padding:65px;
+        width:100%;
+        /*height:100%;*/
+        display:table;
+        background:linear-gradient(
+            rgba(0,0,0,0.75),
+            rgba(0,0,0,0.15)
+        ),
+            url("imgs/DWimgs/ww22.jpg") no-repeat center fixed
+            /*background-size:cover;*/
+    }
+    #bg3{
+        /*Fix the image size in the background.*/
+        /*silhouette:100%;*/
+        padding:65px;
+        width:100%;
+        /*height:100%;*/
+        display:table;
+        background:linear-gradient(
+            rgba(0,0,0,0.75),
+            rgba(0,0,0,0.15)
+        ),
+            url("imgs/DWimgs/ww23.jpg") no-repeat center fixed
+            /*background-size:cover;*/
+    }
+    #bg4{
+        /*Fix the image size in the background.*/
+        /*silhouette:100%;*/
+        padding:65px;
+        width:100%;
+        /*height:100%;*/
+        display:table;
+        background:linear-gradient(
+            rgba(0,0,0,0.75),
+            rgba(0,0,0,0.15)
+        ),
+            url("imgs/DWimgs/ww24.jpg") no-repeat center fixed
+            /*background-size:cover;*/
+    }
+    body{
+        background-color:#e3e0e5;
+    }
+    @media(min-width:768px){
+        p{
+            font-size:22px;
+        }
+    }
+    @media(min-width:992px){
+        p{
+            font-size:32px;
+        }
+    }
+</style>
 
 <body>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-        
+        <a href="index.html">Home</a>
+        <a href="#involved">Involved Nations</a>
+        <a href="#start">Start of the Wars</a>
+        <a href="#battle">Major Battle(s)</a>
+        <a href="#effects">Outcome/Effects</a>
+
     </div>
 
     <div id="main">
 
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; World War II</span>
     </div>
 
     <script>
@@ -102,7 +191,40 @@
             document.body.style.backgroundColor = "white";
         }
     </script>
-    
+    <!--
+    NOTE TO SELF!!!!!
+    ADD SECTIONS LINES/SEGMENT THE PAGES!!!!!!! done
+    Also need images for major battles and fixed header imgs behind each header
+    for fixed background imgs: https://www.w3schools.com/cssref/pr_background-attachment.asp done
+    -->
+    <div class="container">
+        <div class="vietcontent">
+            <img src="imgs/sep11-final-proj-icon.png "><br>
+            <div id="bg1">
+                <strong><span class="heading1" id="involved">Involved Nations:</span></strong>
+            </div>
+            <br><p>Allies v. Axis
+            <br>Allies: United States (took Russia’s place), Russia (pulled out due to circumstance), Britain, France
+            <br>Axis: Japan, Germany, Italy
+            </p>
+            <div id="bg2">
+                <strong><span class="heading1" id="start">Start of the War</span></strong>
+            </div>
+            <br><p>Started September 1st, 1939 - ended September 2nd, 1945. The United States entered December 11th, 1941
+                <br>After Adolf Hitler took charge of Germany during one of its weakest times, signed a pact with Japan and Italy. Hitler’s rise in power was all possible due to the lingering hatred and effects of the Treaty of Versailles. When Germany invaded Poland, it caused Great Britain and France to declare war on Germany.
+                </p>
+            <div id="bg3">
+                <strong><span class="heading1" id="battle">Battle(s)</span> </strong>
+            </div>
+            <br><p> One of the major battles was Operation Barbarossa. Operation Barbarossa was a code name for the large invasion on the Soviet Union from the Nazis. With over three million soldiers, 150 divisions, and three thousand tanks, all entering the territory. Despite the large front launched by Germany, the entire operation failed and it resulted in Germany having to fight two separate fronts against a coalition that held more and superior resources.
+            </p>
+            <div id="bg4">
+                <strong><span class="heading1" id="effects">Outcome/Effects of the War</span></strong>
+            </div>
+            <br><p>An estimated 45-60 million as casualties from the war and an additional 6 million Jews from Hitler’s Holocaust with nuclear threat present on multiple sides after the end of the war. The United States established itself as a global power after the demonstration of the atomic bombs, Fat Man and Little Boy, on the cities of Hiroshima and Nagasaki in Japan. Immediately following the second World War came tensions between the United States and Russia, starting a Cold War. Additionally, American foreign policy has deeply changed after this war as it actively sought to contain any communist threat.
+            </p>
+            <br>
+        </div>
+    </div>
 </body>
-
 </html>
