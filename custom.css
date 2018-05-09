@@ -29,6 +29,10 @@ h4 {
  .item {
      height: 50vh;
  }
+ #myCarousel{
+     background-size: cover;
+     position: absolute;
+ }
  
 /*img {*/
 /*     background-size: cover;*/
