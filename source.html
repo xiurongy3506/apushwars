@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" contact="width=device-width, initial-scale=1">
+    <title>title</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link href="custom.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#flip").click(function() {
+                $("#panel").slideToggle("slow");
+            });
+        });
+    </script>
+
+    <style>
+        #panel,
+        #flip {
+
+            padding: 5px;
+            text-align: center;
+            background-color: #222222;
+            border: solid 1px #999999;
+        }
+
+        #panel {
+            padding: 50px;
+            color: #FFFFFF;
+        }
+
+        body {
+            font-family: "Lato", sans-serif;
+            transition: background-color .5s;
+        }
+
+
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+        a {
+            float: left;
+            font-size: 40px;
+            position: relative;
+            color: #FF4326;
+        }
+
+        a:hover {
+            color: #f9cccc;
+        }
+
+        h2 {
+            color: #FFFFFF;
+            position: absolute;
+            margin-left: 35%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="flip">
+        <div class='container'>
+            <a href="index.html"><span class= "glyphicon glyphicon-home"></a>
+            <h2>Sources</h2>
+        </div>
+    </div>
+    <div id="panel">
+        American Revolution: https://www.history.com/topics/american-revolution/american-revolution-history
+        <br>Ap US History Kaplan book
+        <br><br>
+        
+        War of 1812: https://www.history.com/topics/war-of-1812
+        <br>5 STEPS TO A : Ap US History 2018 book 
+        <br><br>
+        
+        Mexican War: https://www.history.com/topics/mexican-american-war
+        <br>https://www.history.com/topics/battle-of-palo-alto
+        <br><br>
+        Vietnam War: https://www.history.com/topics/vietnam-war/vietnam-war-history <br>https://www.history.com/topics/vietnam-war/my-lai-massacre
+        <br><br>WW2: https://www.history.com/topics/world-war-ii/world-war-ii-history
+        <br> https://www.history.com/topics/world-war-ii/operation-barbarossa
+        <br><br> Korean War: https://www.history.com/topics/korean-war https://www.history.com/topics/inchon
+        <br><br> Spanish-American War: https://www.history.com/topics/spanish-american-war
+        <br><br> World War 1: https://www.history.com/topics/world-war-i/world-war-i-history
+        <br><br> Civil War: https://www.history.com/topics/american-civil-war/american-civil-war-history
+        <br><br>Battle of Fort Sumter: https://www.history.com/topics/american-civil-war/fort-sumter
+        <br><br> Battle of Las Guasimas: https://en.wikipedia.org/wiki/Battle_of_Las_Guasimas
+        <br><br> www.history.com
+    </div>
+
+
+</body>
+
+</html>
