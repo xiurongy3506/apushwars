@@ -37,16 +37,8 @@ h4 {
 /* min-height: 100vh; */
 /*}*/
  
-<<<<<<< HEAD
-.logo {
-    float: left;
-}
 
-
-/*img {*/
-=======
 /*.containerimg {*/
->>>>>>> 227ee87dd4f3fd483805f75462ecc04d34fb71b1
 /*     background-size: cover;*/
 /*     background-position: center center;*/
 /*     background: no-repeat center center scroll;*/
@@ -58,9 +50,9 @@ h4 {
 
 /*medium & up*/
 
-@media only screen and (min-width: 992px) {
+/*@media only screen and (min-width: 992px) {*/
     
-}
+/*}*/
 
 
 /*large & up*/
