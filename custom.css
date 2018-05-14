@@ -8,6 +8,13 @@ h4 {
     background-color: black;
 }
 
+.link {
+    color: white;
+}
+
+.link:hover{
+    color: #FF4326;
+}
 .containerimg {
     padding-top: 80px;
     width: 100%;
